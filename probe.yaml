@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: probe
+spec:
+  containers:
+  - command: ["ping", "localhost"]
+    name: probe
+    image: 745604799345.dkr.ecr.cn-northwest-1.amazonaws.com.cn/probe
